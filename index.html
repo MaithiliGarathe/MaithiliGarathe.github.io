@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maithili Govind Garathe | Web Developer</title>
+
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #40514e;
+            background-color: white;
+            line-height: 1.6;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            width: 100%;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            z-index: 1000;
+
+            background-color: rgba(228, 249, 245, 0.96);
+
+            padding: 17px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .logo {
+            color: #11999e;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+
+        .nav-links a {
+            color: #40514e;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+
+        .nav-links a:hover {
+            color: #11999e;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 720px;
+
+            background-color: #e4f9f5;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 120px 20px 80px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .hero-content {
+            max-width: 750px;
+            z-index: 2;
+        }
+
+
+        .hero-profile {
+            width: 155px;
+            height: 155px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 6px solid white;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+            margin-bottom: 25px;
+        }
+
+
+        .hero h1 {
+            color: #66bfbf;
+
+            font-family:
+                "Brush Script MT",
+                "Segoe Script",
+                cursive;
+
+            font-size: 72px;
+
+            font-weight: normal;
+
+            margin-bottom: 8px;
+        }
+
+
+        .hero h2 {
+            color: #11999e;
+
+            font-size: 24px;
+
+            font-weight: normal;
+
+            margin-bottom: 20px;
+        }
+
+
+        .hero p {
+            max-width: 600px;
+
+            margin: auto;
+
+            font-size: 16px;
+
+            color: #40514e;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================= */
+
+        .hero-buttons {
+            margin-top: 30px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .btn {
+            display: inline-block;
+
+            padding: 13px 27px;
+
+            border-radius: 30px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .primary-btn {
+            background-color: #11999e;
+
+            color: white;
+        }
+
+
+        .primary-btn:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 8px 20px rgba(17, 153, 158, 0.3);
+        }
+
+
+        .secondary-btn {
+            background-color: white;
+
+            border: 2px solid #11999e;
+
+            color: #11999e;
+        }
+
+
+        .secondary-btn:hover {
+            background-color: #11999e;
+
+            color: white;
+
+            transform: translateY(-4px);
+        }
+
+
+        /* =========================
+           CLOUDS
+        ========================= */
+
+        .cloud {
+            position: absolute;
+
+            width: 110px;
+            height: 35px;
+
+            background-color: white;
+
+            border-radius: 50px;
+
+            opacity: 0.8;
+        }
+
+
+        .cloud::before {
+            content: "";
+
+            position: absolute;
+
+            width: 50px;
+            height: 50px;
+
+            background-color: white;
+
+            border-radius: 50%;
+
+            left: 20px;
+            top: -28px;
+        }
+
+
+        .cloud::after {
+            content: "";
+
+            position: absolute;
+
+            width: 60px;
+            height: 60px;
+
+            background-color: white;
+
+            border-radius: 50%;
+
+            right: 12px;
+            top: -35px;
+        }
+
+
+        .cloud-one {
+            top: 130px;
+            left: 12%;
+        }
+
+
+        .cloud-two {
+            top: 230px;
+            right: 12%;
+        }
+
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            padding: 90px 8%;
+        }
+
+
+        .section-title {
+            text-align: center;
+
+            color: #66bfbf;
+
+            font-family: Georgia, serif;
+
+            font-size: 40px;
+
+            font-weight: normal;
+
+            margin-bottom: 12px;
+        }
+
+
+        .section-subtitle {
+            text-align: center;
+
+            color: #11999e;
+
+            font-size: 15px;
+
+            margin-bottom: 50px;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-container {
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+
+        .about-container p {
+            font-size: 16px;
+
+            line-height: 1.9;
+
+            color: #40514e;
+        }
+
+
+        .about-highlight {
+            margin-top: 35px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .about-box {
+            width: 190px;
+
+            padding: 22px;
+
+            background-color: #f3fcfa;
+
+            border-radius: 15px;
+
+            transition: 0.3s;
+        }
+
+
+        .about-box:hover {
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+
+        .about-box h3 {
+            color: #11999e;
+
+            font-size: 23px;
+
+            margin-bottom: 5px;
+        }
+
+
+        .about-box p {
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           SKILLS SECTION
+        ========================= */
+
+        .skills-section {
+            background-color: #f8fffd;
+        }
+
+
+        .skills-container {
+            max-width: 1050px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .skill-card {
+            background-color: white;
+
+            padding: 30px 15px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.06);
+
+            transition: 0.3s;
+        }
+
+
+        .skill-card:hover {
+            transform: translateY(-9px);
+
+            box-shadow:
+                0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .skill-icon {
+            width: 75px;
+            height: 75px;
+
+            margin: auto auto 18px;
+
+            border-radius: 50%;
+
+            background-color: #e4f9f5;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #11999e;
+
+            font-size: 20px;
+
+            font-weight: bold;
+        }
+
+
+        .skill-card h3 {
+            color: #40514e;
+
+            margin-bottom: 8px;
+
+            font-size: 17px;
+        }
+
+
+        .skill-card p {
+            font-size: 12px;
+
+            color: #777;
+        }
+
+
+        /* =========================
+           JAVASCRIPT LEARNING
+        ========================= */
+
+        .learning {
+            margin-top: 8px;
+
+            display: inline-block;
+
+            padding: 4px 9px;
+
+            border-radius: 20px;
+
+            background-color: #e4f9f5;
+
+            color: #11999e;
+
+            font-size: 10px;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           PROJECT SECTION
+        ========================= */
+
+        .projects-container {
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+
+        .project-card {
+            background-color: white;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.08);
+
+            transition: 0.3s;
+        }
+
+
+        .project-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+
+        .project-top {
+            height: 190px;
+
+            background-color: #e4f9f5;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #11999e;
+
+            font-size: 55px;
+
+            font-weight: bold;
+        }
+
+
+        .project-content {
+            padding: 30px;
+
+            text-align: center;
+        }
+
+
+        .project-content h3 {
+            color: #11999e;
+
+            font-size: 24px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .team {
+            display: inline-block;
+
+            background-color: #e4f9f5;
+
+            color: #11999e;
+
+            padding: 5px 12px;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            margin-bottom: 18px;
+        }
+
+
+        .project-content p {
+            max-width: 650px;
+
+            margin: auto;
+
+            font-size: 15px;
+
+            color: #666;
+
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           EDUCATION
+        ========================= */
+
+        .education-section {
+            background-color: #f8fffd;
+        }
+
+
+        .education-card {
+            max-width: 750px;
+
+            margin: auto;
+
+            padding: 35px;
+
+            background-color: white;
+
+            border-left: 5px solid #11999e;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .education-card h3 {
+            color: #11999e;
+
+            font-size: 22px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .education-card h4 {
+            color: #555;
+
+            margin-bottom: 10px;
+        }
+
+
+        .education-card p {
+            color: #777;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-container {
+            max-width: 700px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+
+        .contact-container p {
+            font-size: 16px;
+
+            color: #666;
+
+            margin-bottom: 25px;
+        }
+
+
+        .email {
+            display: inline-block;
+
+            color: #11999e;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            margin-bottom: 25px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background-color: #66bfbf;
+
+            text-align: center;
+
+            padding: 45px 20px;
+
+            color: white;
+        }
+
+
+        .footer-name {
+            font-size: 25px;
+
+            font-weight: bold;
+
+            margin-bottom: 20px;
+        }
+
+
+        .footer-links {
+            margin-bottom: 25px;
+        }
+
+
+        .footer-links a {
+            color: white;
+
+            margin: 0 15px;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+
+        .footer-links a:hover {
+            color: #e4f9f5;
+        }
+
+
+        .copyright {
+            font-size: 12px;
+
+            opacity: 0.9;
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media screen and (max-width: 900px) {
+
+            .skills-container {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media screen and (max-width: 600px) {
+
+            nav {
+                padding: 15px 4%;
+            }
+
+
+            .logo {
+                font-size: 19px;
+            }
+
+
+            .nav-links {
+                gap: 9px;
+            }
+
+
+            .nav-links a {
+                font-size: 10px;
+            }
+
+
+            .hero {
+                min-height: 680px;
+
+                padding-top: 100px;
+            }
+
+
+            .hero-profile {
+                width: 130px;
+                height: 130px;
+            }
+
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+
+            .hero h2 {
+                font-size: 19px;
+            }
+
+
+            .hero p {
+                font-size: 14px;
+            }
+
+
+            .hero-buttons {
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+
+            .btn {
+                width: 190px;
+            }
+
+
+            section {
+                padding: 70px 6%;
+            }
+
+
+            .section-title {
+                font-size: 32px;
+            }
+
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+
+            .about-highlight {
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+
+            .about-box {
+                width: 220px;
+            }
+
+
+            .project-content h3 {
+                font-size: 20px;
+            }
+
+
+            .project-content p {
+                font-size: 14px;
+            }
+
+
+            .cloud-one {
+                left: 5%;
+            }
+
+
+            .cloud-two {
+                right: 5%;
+            }
+
+
+            footer {
+                padding: 35px 15px;
+            }
+
+
+            .footer-links a {
+                display: inline-block;
+
+                margin: 8px 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav>
+
+
+        <div class="logo">
+            Maithili.
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================= -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+
+        <div class="cloud cloud-one"></div>
+
+        <div class="cloud cloud-two"></div>
+
+
+        <div class="hero-content">
+
+
+            <img
+                class="hero-profile"
+                src="images/Profile.jpeg"
+                alt="Maithili Govind Garathe"
+            >
+
+
+            <h1>
+                I'm Maithili.
+            </h1>
+
+
+            <h2>
+                Web Developer & IT Engineering Student
+            </h2>
+
+
+            <p>
+
+                I enjoy creating clean, responsive and
+                user-friendly websites while continuously
+                learning new technologies.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a
+                    href="#projects"
+                    class="btn primary-btn"
+                >
+                    View My Project
+                </a>
+
+
+                <a
+                    href="#contact"
+                    class="btn secondary-btn"
+                >
+                    Contact Me
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section id="about">
+
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+
+        <p class="section-subtitle">
+            Get to know me
+        </p>
+
+
+        <div class="about-container">
+
+
+            <p>
+
+                Hello! I am
+                <strong>Maithili Govind Garathe</strong>,
+                a third-year IT Engineering student and
+                an aspiring Web Developer.
+
+            </p>
+
+
+            <p style="margin-top: 18px;">
+
+                I enjoy creating websites and learning
+                new technologies. I currently have
+                knowledge of HTML, CSS, Bootstrap and
+                Basic Python. I am also learning
+                JavaScript to improve my web development
+                skills.
+
+            </p>
+
+
+            <div class="about-highlight">
+
+
+                <div class="about-box">
+
+                    <h3>
+                        3rd
+                    </h3>
+
+                    <p>
+                        Year IT Engineering
+                    </p>
+
+                </div>
+
+
+                <div class="about-box">
+
+                    <h3>
+                        4+
+                    </h3>
+
+                    <p>
+                        Technical Skills
+                    </p>
+
+                </div>
+
+
+                <div class="about-box">
+
+                    <h3>
+                        JS
+                    </h3>
+
+                    <p>
+                        Currently Learning
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         SKILLS
+    ========================= -->
+
+    <section
+        class="skills-section"
+        id="skills"
+    >
+
+
+        <h2 class="section-title">
+            My Skills
+        </h2>
+
+
+        <p class="section-subtitle">
+            Technologies I know and am learning
+        </p>
+
+
+        <div class="skills-container">
+
+
+            <!-- HTML -->
+
+            <div class="skill-card">
+
+
+                <div class="skill-icon">
+                    HTML
+                </div>
+
+
+                <h3>
+                    HTML
+                </h3>
+
+
+                <p>
+                    Creating structured web pages.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- CSS -->
+
+            <div class="skill-card">
+
+
+                <div class="skill-icon">
+                    CSS
+                </div>
+
+
+                <h3>
+                    CSS
+                </h3>
+
+
+                <p>
+                    Designing attractive web pages.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- BOOTSTRAP -->
+
+            <div class="skill-card">
+
+
+                <div class="skill-icon">
+                    B
+                </div>
+
+
+                <h3>
+                    Bootstrap
+                </h3>
+
+
+                <p>
+                    Building responsive layouts.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- PYTHON -->
+
+            <div class="skill-card">
+
+
+                <div class="skill-icon">
+                    PY
+                </div>
+
+
+                <h3>
+                    Basic Python
+                </h3>
+
+
+                <p>
+                    Basic programming and logic.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- JAVASCRIPT -->
+
+            <div class="skill-card">
+
+
+                <div class="skill-icon">
+                    JS
+                </div>
+
+
+                <h3>
+                    JavaScript
+                </h3>
+
+
+                <p>
+                    Learning JavaScript for
+                    interactive websites.
+                </p>
+
+
+                <span class="learning">
+                    Currently Learning
+                </span>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         PROJECT
+    ========================= -->
+
+    <section id="projects">
+
+
+        <h2 class="section-title">
+            My Project
+        </h2>
+
+
+        <p class="section-subtitle">
+            A project I worked on as a team member
+        </p>
+
+
+        <div class="projects-container">
+
+
+            <div class="project-card">
+
+
+                <div class="project-top">
+                    🌍
+                </div>
+
+
+                <div class="project-content">
+
+
+                    <h3>
+                        Smart Tourist Safety
+                        Monitoring System
+                    </h3>
+
+
+                    <span class="team">
+                        Team Project • 4 Members
+                    </span>
+
+
+                    <p>
+
+                        A team-based project developed
+                        to improve tourist safety through
+                        a smart monitoring and assistance
+                        system.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         EDUCATION
+    ========================= -->
+
+    <section
+        class="education-section"
+        id="education"
+    >
+
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+
+        <p class="section-subtitle">
+            My academic journey
+        </p>
+
+
+        <div class="education-card">
+
+
+            <h3>
+                Bachelor of Engineering
+            </h3>
+
+
+            <h4>
+                Information Technology
+            </h4>
+
+
+            <p>
+
+                Currently pursuing my third year of
+                IT Engineering and developing my
+                technical and problem-solving skills.
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section id="contact">
+
+
+        <h2 class="section-title">
+            Get In Touch
+        </h2>
+
+
+        <p class="section-subtitle">
+            Let's connect!
+        </p>
+
+
+        <div class="contact-container">
+
+
+            <p>
+
+                If you would like to know more about
+                me, my project or my skills, feel free
+                to get in touch with me.
+
+            </p>
+
+
+            <a
+                class="email"
+                href="mailto:maithiligarathe@gmail.com"
+            >
+
+                maithiligarathe@gmail.com
+
+            </a>
+
+
+            <br>
+
+
+            <a
+                class="btn primary-btn"
+                href="mailto:maithiligarathe@gmail.com"
+            >
+
+                CONTACT ME
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+
+        <div class="footer-name">
+            Maithili Govind Garathe
+        </div>
+
+
+        <div class="footer-links">
+
+
+            <a
+                href="https://www.linkedin.com/in/MaithiliGarathe/"
+                target="_blank"
+            >
+                LinkedIn
+            </a>
+
+
+            <a
+                href="https://github.com/MaithiliGarathe"
+                target="_blank"
+            >
+                GitHub
+            </a>
+
+
+            <a
+                href="mailto:maithiligarathe@gmail.com"
+            >
+                Email
+            </a>
+
+
+        </div>
+
+
+        <p class="copyright">
+
+            © 2026 Maithili Govind Garathe.
+            All Rights Reserved.
+
+        </p>
+
+
+    </footer>
+
+
+</body>
+
+</html>
